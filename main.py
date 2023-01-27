@@ -5,12 +5,9 @@ from requests_oauthlib import OAuth1Session
 from dotenv import load_dotenv
 load_dotenv()
 
-# In your terminal please set your environment variables by running the following lines of code.
-
 consumer_key = os.environ.get("API_KEY")
 consumer_secret = os.environ.get("API_SECRET")
 
-# Be sure to add replace the text of the with the text you wish to Tweet. You can also add parameters to post polls, quote Tweets, Tweet with reply settings, and Tweet to Super Followers in addition to other features.
 payload = {"text": "currently tweeting from a python bot. hi"}
 
 # Get request token
